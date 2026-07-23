@@ -1,0 +1,42 @@
+{
+    "name": "CookieCost - Calculadora de Custos",
+    "short_name": "CookieCost",
+    "description": "Calculadora de custos para receitas de cookies e precificação.",
+    "lang": "pt-BR",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "orientation": "portrait",
+
+    "background_color": "#F8F5F2",
+    "theme_color": "#A56A43",
+
+    "icons": [
+        {
+            "src": "assets/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "assets/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+
+    "categories": [
+        "business",
+        "productivity",
+        "utilities"
+    ],
+
+    "screenshots": [
+        {
+            "src": "assets/screenshot.png",
+            "sizes": "1080x1920",
+            "type": "image/png"
+        }
+    ]
+}

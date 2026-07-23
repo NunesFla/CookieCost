@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CookieCost</title>
+
+    <meta name="theme-color" content="#8B5E3C">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="icon" href="assets/favicon.ico">
+
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="assets/logo.png" alt="Logo">
+    </div>
+
+    <h1>CookieCost</h1>
+
+    <p>Calculadora de Custos para Receitas</p>
+
+</header>
+
+<main>
+
+    <!-- =============================== -->
+    <!-- INGREDIENTES -->
+    <!-- =============================== -->
+
+    <section class="card">
+
+        <h2>📦 Cadastro dos Ingredientes</h2>
+
+        <div class="ingrediente">
+
+            <h3>Farinha</h3>
+
+            <input
+                type="number"
+                id="farinhaQtd"
+                placeholder="Quantidade do pacote (g)"
+            >
+
+            <input
+                type="number"
+                id="farinhaValor"
+                placeholder="Valor pago (R$)"
+                step="0.01"
+            >
+
+        </div>
+
+        <div class="ingrediente">
+
+            <h3>Chocolate</h3>
+
+            <input
+                type="number"
+                id="chocolateQtd"
+                placeholder="Quantidade do pacote (g)"
+            >
+
+            <input
+                type="number"
+                id="chocolateValor"
+                placeholder="Valor pago (R$)"
+                step="0.01"
+            >
+
+        </div>
+
+        <div class="ingrediente">
+
+            <h3>Fermento</h3>
+
+            <input
+                type="number"
+                id="fermentoQtd"
+                placeholder="Quantidade do pacote (g)"
+            >
+
+            <input
+                type="number"
+                id="fermentoValor"
+                placeholder="Valor pago (R$)"
+                step="0.01"
+            >
+
+        </div>
+
+        <div class="ingrediente">
+
+            <h3>Ovos</h3>
+
+            <input
+                type="number"
+                id="ovoQtd"
+                placeholder="Quantidade comprada"
+            >
+
+            <input
+                type="number"
+                id="ovoValor"
+                placeholder="Valor pago (R$)"
+                step="0.01"
+            >
+
+        </div>
+
+        <div class="ingrediente">
+
+            <h3>Açúcar Refinado</h3>
+
+            <input
+                type="number"
+                id="acucarRefiQtd"
+                placeholder="Quantidade do pacote (g)"
+            >
+
+            <input
+                type="number"
+                id="acucarRefiValor"
+                placeholder="Valor pago (R$)"
+                step="0.01"
+            >
+
+        </div>
+
+        <div class="ingrediente">
+
+            <h3>Açúcar Mascavo</h3>
+
+            <input
+                type="number"
+                id="acucarMascQtd"
+                placeholder="Quantidade do pacote (g)"
+            >
+
+            <input
+                type="number"
+                id="acucarMascValor"
+                placeholder="Valor pago (R$)"
+                step="0.01"
+            >
+
+        </div>
+
+        <div class="ingrediente">
+
+            <h3>Amido</h3>
+
+            <input
+                type="number"
+                id="amidoQtd"
+                placeholder="Quantidade do pacote (g)"
+            >
+
+            <input
+                type="number"
+                id="amidoValor"
+                placeholder="Valor pago (R$)"
+                step="0.01"
+            >
+
+        </div>
+
+        <div class="ingrediente">
+
+            <h3>Bicarbonato</h3>
+
+            <input
+                type="number"
+                id="bicarbonatoQtd"
+                placeholder="Quantidade do pacote (g)"
+            >
+
+            <input
+                type="number"
+                id="bicarbonatoValor"
+                placeholder="Valor pago (R$)"
+                step="0.01"
+            >
+
+        </div>
+
+    </section>
+
+    <!-- =============================== -->
+    <!-- RECEITA -->
+    <!-- =============================== -->
+
+    <section class="card">
+
+        <h2>🥣 Receita</h2>
+
+        <input type="number" id="farinhaUso" placeholder="Farinha utilizada (g)">
+        <input type="number" id="chocolateUso" placeholder="Chocolate utilizado (g)">
+        <input type="number" id="fermentoUso" placeholder="Fermento utilizado (g)">
+        <input type="number" id="ovoUso" placeholder="Ovos utilizados">
+        <input type="number" id="acucarRefiUso" placeholder="Açúcar Refinado utilizado (g)">
+        <input type="number" id="acucarMascUso" placeholder="Açúcar Mascavo utilizado (g)">
+        <input type="number" id="amidoUso" placeholder="Amido utilizado (g)">
+        <input type="number" id="bicarbonatoUso" placeholder="Bicarbonato utilizado (g)">
+
+    </section>
+
+    <!-- =============================== -->
+    <!-- CONFIGURAÇÕES -->
+    <!-- =============================== -->
+
+    <section class="card">
+
+        <h2>⚙ Configurações</h2>
+
+        <input
+            type="number"
+            id="acrescimo"
+            value="30"
+            placeholder="Custos Extras (%)"
+        >
+
+        <input
+            type="number"
+            id="quantidadeCookies"
+            placeholder="Quantidade de Cookies Produzidos"
+        >
+
+        <input
+            type="number"
+            id="lucro"
+            value="100"
+            placeholder="Lucro Desejado (%)"
+        >
+
+    </section>
+
+    <!-- =============================== -->
+    <!-- BOTÕES -->
+    <!-- =============================== -->
+
+    <section class="acoes">
+
+        <button id="btnCalcular">
+            Calcular Receita
+        </button>
+
+        <button id="btnLimpar">
+            Limpar
+        </button>
+
+    </section>
+
+    <!-- =============================== -->
+    <!-- RESULTADOS -->
+    <!-- =============================== -->
+
+    <section class="card resultado">
+
+        <h2>📊 Resultado</h2>
+
+        <div id="resultado">
+
+            <p>Aguardando cálculo...</p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>CookieCost © 2026</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+
+if ("serviceWorker" in navigator) {
+
+    window.addEventListener("load", () => {
+
+        navigator.serviceWorker.register("service-worker.js")
+
+        .then(() => {
+
+            console.log("Service Worker registrado");
+
+        })
+
+        .catch((erro) => {
+
+            console.log("Erro no Service Worker:", erro);
+
+        });
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>
